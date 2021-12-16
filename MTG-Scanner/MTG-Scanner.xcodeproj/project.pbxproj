@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9494CCFB27635C3000D0ECD5 /* MTG_ScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494CCFA27635C3000D0ECD5 /* MTG_ScannerApp.swift */; };
+		9494CCFD27635C3000D0ECD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494CCFC27635C3000D0ECD5 /* ContentView.swift */; };
+		9494CCFF27635C3000D0ECD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9494CCFE27635C3000D0ECD5 /* Assets.xcassets */; };
+		9494CD0227635C3000D0ECD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9494CD0127635C3000D0ECD5 /* Preview Assets.xcassets */; };
+		9494CD0427635C3000D0ECD5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494CD0327635C3000D0ECD5 /* Persistence.swift */; };
+		9494CD0727635C3000D0ECD5 /* MTG_Scanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9494CD0527635C3000D0ECD5 /* MTG_Scanner.xcdatamodeld */; };
+		9494CD1127635C3000D0ECD5 /* MTG_ScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494CD1027635C3000D0ECD5 /* MTG_ScannerTests.swift */; };
+		9494CD1B27635C3000D0ECD5 /* MTG_ScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494CD1A27635C3000D0ECD5 /* MTG_ScannerUITests.swift */; };
+		9494CD1D27635C3000D0ECD5 /* MTG_ScannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494CD1C27635C3000D0ECD5 /* MTG_ScannerUITestsLaunchTests.swift */; };
+		9494CD2C2765102600D0ECD5 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494CD2B2765102500D0ECD5 /* ScannerView.swift */; };
+		9494CD2E276510A200D0ECD5 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494CD2D276510A200D0ECD5 /* CardListView.swift */; };
+		9494CD3227668A7B00D0ECD5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494CD3127668A7B00D0ECD5 /* CardView.swift */; };
+		94FB06A12768A5D30076374E /* FilterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FB06A02768A5D30076374E /* FilterSheet.swift */; };
+		94FB06A3276B2FEF0076374E /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FB06A2276B2FEF0076374E /* TextRecognizer.swift */; };
+		94FB06A7276B36380076374E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FB06A6276B36380076374E /* Model.swift */; };
+		94FB06A9276B37720076374E /* RealScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FB06A8276B37720076374E /* RealScannerView.swift */; };
+		94FB06AB276B38310076374E /* TextPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FB06AA276B38310076374E /* TextPreviewView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9494CD0D27635C3000D0ECD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9494CCEF27635C3000D0ECD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9494CCF627635C3000D0ECD5;
+			remoteInfo = "MTG-Scanner";
+		};
+		9494CD1727635C3000D0ECD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9494CCEF27635C3000D0ECD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9494CCF627635C3000D0ECD5;
+			remoteInfo = "MTG-Scanner";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9494CCF727635C3000D0ECD5 /* MTG-Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTG-Scanner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9494CCFA27635C3000D0ECD5 /* MTG_ScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTG_ScannerApp.swift; sourceTree = "<group>"; };
+		9494CCFC27635C3000D0ECD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9494CCFE27635C3000D0ECD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9494CD0127635C3000D0ECD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9494CD0327635C3000D0ECD5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		9494CD0627635C3000D0ECD5 /* MTG_Scanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MTG_Scanner.xcdatamodel; sourceTree = "<group>"; };
+		9494CD0C27635C3000D0ECD5 /* MTG-ScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MTG-ScannerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9494CD1027635C3000D0ECD5 /* MTG_ScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTG_ScannerTests.swift; sourceTree = "<group>"; };
+		9494CD1627635C3000D0ECD5 /* MTG-ScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MTG-ScannerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9494CD1A27635C3000D0ECD5 /* MTG_ScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTG_ScannerUITests.swift; sourceTree = "<group>"; };
+		9494CD1C27635C3000D0ECD5 /* MTG_ScannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTG_ScannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9494CD2B2765102500D0ECD5 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		9494CD2D276510A200D0ECD5 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
+		9494CD3127668A7B00D0ECD5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		94FB06A02768A5D30076374E /* FilterSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSheet.swift; sourceTree = "<group>"; };
+		94FB06A2276B2FEF0076374E /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
+		94FB06A6276B36380076374E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		94FB06A8276B37720076374E /* RealScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealScannerView.swift; sourceTree = "<group>"; };
+		94FB06AA276B38310076374E /* TextPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPreviewView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9494CCF427635C3000D0ECD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9494CD0927635C3000D0ECD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9494CD1327635C3000D0ECD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9494CCEE27635C3000D0ECD5 = {
+			isa = PBXGroup;
+			children = (
+				9494CCF927635C3000D0ECD5 /* MTG-Scanner */,
+				9494CD0F27635C3000D0ECD5 /* MTG-ScannerTests */,
+				9494CD1927635C3000D0ECD5 /* MTG-ScannerUITests */,
+				9494CCF827635C3000D0ECD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9494CCF827635C3000D0ECD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9494CCF727635C3000D0ECD5 /* MTG-Scanner.app */,
+				9494CD0C27635C3000D0ECD5 /* MTG-ScannerTests.xctest */,
+				9494CD1627635C3000D0ECD5 /* MTG-ScannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9494CCF927635C3000D0ECD5 /* MTG-Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				9494CCFA27635C3000D0ECD5 /* MTG_ScannerApp.swift */,
+				9494CD2D276510A200D0ECD5 /* CardListView.swift */,
+				9494CCFC27635C3000D0ECD5 /* ContentView.swift */,
+				9494CD3127668A7B00D0ECD5 /* CardView.swift */,
+				9494CD2B2765102500D0ECD5 /* ScannerView.swift */,
+				94FB06A8276B37720076374E /* RealScannerView.swift */,
+				94FB06AA276B38310076374E /* TextPreviewView.swift */,
+				94FB06A2276B2FEF0076374E /* TextRecognizer.swift */,
+				94FB06A02768A5D30076374E /* FilterSheet.swift */,
+				94FB06A6276B36380076374E /* Model.swift */,
+				9494CCFE27635C3000D0ECD5 /* Assets.xcassets */,
+				9494CD0327635C3000D0ECD5 /* Persistence.swift */,
+				9494CD0527635C3000D0ECD5 /* MTG_Scanner.xcdatamodeld */,
+				9494CD0027635C3000D0ECD5 /* Preview Content */,
+			);
+			path = "MTG-Scanner";
+			sourceTree = "<group>";
+		};
+		9494CD0027635C3000D0ECD5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9494CD0127635C3000D0ECD5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9494CD0F27635C3000D0ECD5 /* MTG-ScannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9494CD1027635C3000D0ECD5 /* MTG_ScannerTests.swift */,
+			);
+			path = "MTG-ScannerTests";
+			sourceTree = "<group>";
+		};
+		9494CD1927635C3000D0ECD5 /* MTG-ScannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9494CD1A27635C3000D0ECD5 /* MTG_ScannerUITests.swift */,
+				9494CD1C27635C3000D0ECD5 /* MTG_ScannerUITestsLaunchTests.swift */,
+			);
+			path = "MTG-ScannerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9494CCF627635C3000D0ECD5 /* MTG-Scanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9494CD2027635C3000D0ECD5 /* Build configuration list for PBXNativeTarget "MTG-Scanner" */;
+			buildPhases = (
+				9494CCF327635C3000D0ECD5 /* Sources */,
+				9494CCF427635C3000D0ECD5 /* Frameworks */,
+				9494CCF527635C3000D0ECD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MTG-Scanner";
+			productName = "MTG-Scanner";
+			productReference = 9494CCF727635C3000D0ECD5 /* MTG-Scanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9494CD0B27635C3000D0ECD5 /* MTG-ScannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9494CD2327635C3000D0ECD5 /* Build configuration list for PBXNativeTarget "MTG-ScannerTests" */;
+			buildPhases = (
+				9494CD0827635C3000D0ECD5 /* Sources */,
+				9494CD0927635C3000D0ECD5 /* Frameworks */,
+				9494CD0A27635C3000D0ECD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9494CD0E27635C3000D0ECD5 /* PBXTargetDependency */,
+			);
+			name = "MTG-ScannerTests";
+			productName = "MTG-ScannerTests";
+			productReference = 9494CD0C27635C3000D0ECD5 /* MTG-ScannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9494CD1527635C3000D0ECD5 /* MTG-ScannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9494CD2627635C3000D0ECD5 /* Build configuration list for PBXNativeTarget "MTG-ScannerUITests" */;
+			buildPhases = (
+				9494CD1227635C3000D0ECD5 /* Sources */,
+				9494CD1327635C3000D0ECD5 /* Frameworks */,
+				9494CD1427635C3000D0ECD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9494CD1827635C3000D0ECD5 /* PBXTargetDependency */,
+			);
+			name = "MTG-ScannerUITests";
+			productName = "MTG-ScannerUITests";
+			productReference = 9494CD1627635C3000D0ECD5 /* MTG-ScannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9494CCEF27635C3000D0ECD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					9494CCF627635C3000D0ECD5 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					9494CD0B27635C3000D0ECD5 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 9494CCF627635C3000D0ECD5;
+					};
+					9494CD1527635C3000D0ECD5 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 9494CCF627635C3000D0ECD5;
+					};
+				};
+			};
+			buildConfigurationList = 9494CCF227635C3000D0ECD5 /* Build configuration list for PBXProject "MTG-Scanner" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9494CCEE27635C3000D0ECD5;
+			productRefGroup = 9494CCF827635C3000D0ECD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9494CCF627635C3000D0ECD5 /* MTG-Scanner */,
+				9494CD0B27635C3000D0ECD5 /* MTG-ScannerTests */,
+				9494CD1527635C3000D0ECD5 /* MTG-ScannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9494CCF527635C3000D0ECD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9494CD0227635C3000D0ECD5 /* Preview Assets.xcassets in Resources */,
+				9494CCFF27635C3000D0ECD5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9494CD0A27635C3000D0ECD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9494CD1427635C3000D0ECD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9494CCF327635C3000D0ECD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9494CD3227668A7B00D0ECD5 /* CardView.swift in Sources */,
+				9494CD0427635C3000D0ECD5 /* Persistence.swift in Sources */,
+				9494CD0727635C3000D0ECD5 /* MTG_Scanner.xcdatamodeld in Sources */,
+				94FB06A9276B37720076374E /* RealScannerView.swift in Sources */,
+				94FB06A12768A5D30076374E /* FilterSheet.swift in Sources */,
+				9494CCFD27635C3000D0ECD5 /* ContentView.swift in Sources */,
+				94FB06A7276B36380076374E /* Model.swift in Sources */,
+				9494CCFB27635C3000D0ECD5 /* MTG_ScannerApp.swift in Sources */,
+				9494CD2E276510A200D0ECD5 /* CardListView.swift in Sources */,
+				94FB06A3276B2FEF0076374E /* TextRecognizer.swift in Sources */,
+				94FB06AB276B38310076374E /* TextPreviewView.swift in Sources */,
+				9494CD2C2765102600D0ECD5 /* ScannerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9494CD0827635C3000D0ECD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9494CD1127635C3000D0ECD5 /* MTG_ScannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9494CD1227635C3000D0ECD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9494CD1D27635C3000D0ECD5 /* MTG_ScannerUITestsLaunchTests.swift in Sources */,
+				9494CD1B27635C3000D0ECD5 /* MTG_ScannerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9494CD0E27635C3000D0ECD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9494CCF627635C3000D0ECD5 /* MTG-Scanner */;
+			targetProxy = 9494CD0D27635C3000D0ECD5 /* PBXContainerItemProxy */;
+		};
+		9494CD1827635C3000D0ECD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9494CCF627635C3000D0ECD5 /* MTG-Scanner */;
+			targetProxy = 9494CD1727635C3000D0ECD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9494CD1E27635C3000D0ECD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9494CD1F27635C3000D0ECD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9494CD2127635C3000D0ECD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MTG-Scanner/Preview Content\"";
+				DEVELOPMENT_TEAM = A7VJFCG77Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Test.MTG-Scanner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9494CD2227635C3000D0ECD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MTG-Scanner/Preview Content\"";
+				DEVELOPMENT_TEAM = A7VJFCG77Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Test.MTG-Scanner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9494CD2427635C3000D0ECD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Test.MTG-ScannerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTG-Scanner.app/MTG-Scanner";
+			};
+			name = Debug;
+		};
+		9494CD2527635C3000D0ECD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Test.MTG-ScannerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTG-Scanner.app/MTG-Scanner";
+			};
+			name = Release;
+		};
+		9494CD2727635C3000D0ECD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Test.MTG-ScannerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MTG-Scanner";
+			};
+			name = Debug;
+		};
+		9494CD2827635C3000D0ECD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Test.MTG-ScannerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MTG-Scanner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9494CCF227635C3000D0ECD5 /* Build configuration list for PBXProject "MTG-Scanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9494CD1E27635C3000D0ECD5 /* Debug */,
+				9494CD1F27635C3000D0ECD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9494CD2027635C3000D0ECD5 /* Build configuration list for PBXNativeTarget "MTG-Scanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9494CD2127635C3000D0ECD5 /* Debug */,
+				9494CD2227635C3000D0ECD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9494CD2327635C3000D0ECD5 /* Build configuration list for PBXNativeTarget "MTG-ScannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9494CD2427635C3000D0ECD5 /* Debug */,
+				9494CD2527635C3000D0ECD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9494CD2627635C3000D0ECD5 /* Build configuration list for PBXNativeTarget "MTG-ScannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9494CD2727635C3000D0ECD5 /* Debug */,
+				9494CD2827635C3000D0ECD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9494CD0527635C3000D0ECD5 /* MTG_Scanner.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9494CD0627635C3000D0ECD5 /* MTG_Scanner.xcdatamodel */,
+			);
+			currentVersion = 9494CD0627635C3000D0ECD5 /* MTG_Scanner.xcdatamodel */;
+			path = MTG_Scanner.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9494CCEF27635C3000D0ECD5 /* Project object */;
+}
